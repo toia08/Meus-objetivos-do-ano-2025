@@ -1,10 +1,10 @@
 :root{
-    --cor-de-fundo:#803528;
-    --ciano:#2aceeb;
+    --cor-de-fundo:#efeb7ca9;
+    --ciano:#2aceeb67;
     --branco:#fffefe;
-    --botao-ativo:#f32b78;
-    --botao-inativo:#a80fc7;
-    --texto-fundo:#2e0202;
+    --botao-ativo:#f32b787c;
+    --botao-inativo:#a80fc770;
+    --texto-fundo:#000000;
 }
 body{
     background-color: var(--cor-de-fundo);
@@ -50,14 +50,14 @@ body{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--ciano);
 }
-
-
-
-
-
-
-
-
-
-
-.botão{}
+@media screen and (min-width:768px) {
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
